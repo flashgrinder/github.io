@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- Метатеги для СЕО -->
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- Для адаптивности на мобильных устройствах -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Картинка для соц.сетей -->
+	<meta name="og:image" content="../images/social.png"> 
+	<!-- Индексировать страницу или нет -->
+	<meta name="robots" content="index, follow">
+	<!-- Цветовое отображение поисковой строки на мобильных устройствах --> 
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	
+	<title>Hero Horrors</title>
+	<link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+	<header class="header">
+		<div class="slider">
+			<div class="item item-1" onMouseover="add1()"><span>saw</span></div>
+			<div class="item item-2" onMouseover="add2()"><span>michael myers</span></div>
+			<div class="item item-3" onMouseover="add3()"><span>leatherface</span></div>
+		</div>
+		<audio id="music" autoplay>
+				<source  src="audio/1.mp3" type="audio/mpeg">
+		</audio>
+	</header>
+
+
+
+	<!--Подключение скриптов-->
+	<script>
+	function add1(){
+		document.getElementById('music').pause();
+		document.getElementById('music').currentTime = 0.0;
+		document.getElementById('music').setAttribute('src', 'audio/1.mp3');
+		document.getElementById('music').play();
+	}
+	function add2(){
+		document.getElementById('music').pause();
+		document.getElementById('music').currentTime = 0.0;
+		document.getElementById('music').setAttribute('src', 'audio/2.mp3');
+		document.getElementById('music').play();
+	}
+	function add3(){
+		document.getElementById('music').pause();
+		document.getElementById('music').currentTime = 0.0;
+		document.getElementById('music').setAttribute('src', 'audio/3.mp3');
+		document.getElementById('music').play();
+	}
+	</script>
+	<!--Подключение скриптов КОНЕЦ-->
+</body>
+</html>

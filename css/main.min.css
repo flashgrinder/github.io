@@ -1,0 +1,275 @@
+@font-face {
+  font-family: 'DIST Inkin Regular';
+  src: url("../fonts/DIST_Inkin_Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'YouMurderer_BB';
+  src: url("../fonts/YouMurderer_BB.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT_Sans-Web-Regular';
+  src: url("../fonts/PT_Sans/PT_Sans-Web-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+legend {
+  color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  color: red;
+  background-color: #000;
+}
+
+.slider {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  font-family: 'YouMurderer_BB', arial;
+  font-size: 100px;
+}
+
+.slider .item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 100vh;
+  flex-basis: 34%;
+  -webkit-transition: .9s;
+  transition: .9s;
+  opacity: 0.6;
+  box-shadow: inset 0px 0px 40px 15px #000000;
+}
+
+.slider .item:hover {
+  opacity: 1;
+  flex-basis: 70%;
+}
+
+.slider .item-1 {
+  text-transform: uppercase;
+  background: url("../img/saw.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.slider .item-2 {
+  text-align: center;
+  text-transform: uppercase;
+  background: url("../img/michael_myers-2.jpg") no-repeat center center;
+  background-size: cover;
+  opacity: 0.1;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  -webkit-transform: scale(1) translateY(-250px);
+  -ms-transform: scale(1) translateY(-250px);
+  transform: scale(1) translateY(-250px);
+}
+
+.slider .item-2:hover {
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.slider .item-2 span {
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  -webkit-transform: scale(1) translateY(250px);
+  -ms-transform: scale(1) translateY(250px);
+  transform: scale(1) translateY(250px);
+}
+
+.slider .item-2:hover span {
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  -webkit-transform: scale(1.1) translateY(300px);
+  -ms-transform: scale(1.1) translateY(300px);
+  transform: scale(1.1) translateY(300px);
+}
+
+.slider .item-3 {
+  text-transform: uppercase;
+  background: url("../img/leatherface.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+@media (max-width: 720px) {
+  .slider {
+    width: 100%;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    font-size: 50px;
+  }
+
+  .slider .item {
+    width: 100%;
+    flex-basis: 30%;
+  }
+
+  .slider .item:hover {
+    -webkit-box-flex: 40%;
+    flex-grow: 40%;
+  }
+
+  .slider .item-2 {
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    flex-basis: 35%;
+    -webkit-box-align: start;
+    align-items: flex-start;
+  }
+
+  .slider .item-3 {
+    z-index: 1;
+  }
+}
+
+@media (max-width: 530px) {
+  slider {
+    font-size: 80px;
+  }
+}
